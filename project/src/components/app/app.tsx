@@ -1,6 +1,5 @@
-// import Film from '../../types/film';
-
 import MainScreen from '../../pages/main-screen/main-screen';
+// import Film from '../../types/film';
 
 type AppScreenProps = {
   title: string;
@@ -8,14 +7,6 @@ type AppScreenProps = {
   releaseDate: number;
 }
 
-// function App({filmData, promoFilm}: AppScreenProps): JSX.Element {
-//   return (
-//     <MainScreen
-//       filmData={filmData}
-//       promoFilm={promoFilm}
-//     />
-//   );
-// }
 function App({ title, genre, releaseDate }: AppScreenProps): JSX.Element {
   return (<MainScreen title={title} genre={genre} releaseDate={releaseDate} />);
 }
